@@ -216,3 +216,34 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Virtual environment
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# TensorFlow model files
+*.keras
+*.h5
+*.ckpt
+
+# Output folders
+outputs/
+
+# Dataset (optional)
+dataset/train_images/
+dataset/test_images/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+dataset/train_images/
+dataset/test_images/
+dataset/processed_images/
+
+# Processed images
+dataset/processed_images/
+
+# Models
+models/
