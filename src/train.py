@@ -1,5 +1,5 @@
 print("train.py started")
-
+from efficientnetb2_model import build_efficientnetb2
 from pathlib import Path
 import tensorflow as tf
 import matplotlib.pyplot as plt
@@ -17,7 +17,7 @@ from dataset_loader import load_dataset
 from model import build_cnn
 from resnet50_model import build_resnet50
 
-MODEL_NAME = "resnet50"   
+MODEL_NAME = "efficientnetb2"   
 
 def train():
 
@@ -44,6 +44,8 @@ def train():
        model = build_cnn()
     elif MODEL_NAME == "resnet50":
        model = build_resnet50()
+    elif MODEL_NAME == "efficientnetb2":
+        model = build_efficientnetb2()
     else:
        raise ValueError("Invalid model name")
 
